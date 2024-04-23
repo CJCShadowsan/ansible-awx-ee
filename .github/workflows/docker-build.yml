@@ -15,7 +15,7 @@ on:
 
 env:
   # The image name
-  IMAGE_NAME: ppodgorsek/ansible-awx-ee:ci
+  IMAGE_NAME: cjcshadowsan/ansible-awx-ee:ci
 
 jobs:
   # Build and run tests.
