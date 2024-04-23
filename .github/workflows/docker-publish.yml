@@ -82,7 +82,7 @@ jobs:
           
       - name: Build and push image
         run: |
-          docker buildx create --name awx-ee-buildx
+          docker buildx create --name awx-ee-buildx --tag=${{ secrets.DOCKER_USERNAME }}/awx-ee-buildx:latest
           docker buildx use awx-ee-buildx
           ansible-builder create -v3 --output-file=Dockerfile
           docker buildx build \
