@@ -12,6 +12,7 @@ ENV ANSIBLE_COLLECTION_GCP_VERSION     v1.3.0
 ENV HELM_VERSION                       v3.14.0
 ENV POSTGRESQL_VERSION                 16
 ENV TERRAFORM_VERSION                  1.7.3
+ENV KUBERNETES_VERSION                 1.23.4
 
 USER root
 
