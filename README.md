@@ -1,4 +1,4 @@
-# Ansible AWX Execution Environment with AWS, Azure, GCP, Kubernetes, Helm, Java and Terraform
+# Ansible AWX Execution Environment with AWS, Azure, GCP, Kubernetes, Helm, Terraform and python3-netaddr
 
 ## Table of contents
 
@@ -26,10 +26,10 @@ It is based on the official Ansible AWX EE image and mainly includes:
     * Google Cloud Platform (GCP)
     * Microsoft Azure
 
-* Java 21
 * Kubernetes & Helm
 * PostgreSQL 16
 * Terraform 1.7.3
+* python3-netaddr
 
 <a name="versioning"></a>
 
@@ -50,7 +50,7 @@ This image can be set up in AWX by:
 2. Adding a new Execution Environment with the following details:
 
     * Name: `Custom AWX Execution Environment`
-    * Image: `docker.io/ppodgorsek/ansible-awx-ee:latest`
+    * Image: `docker.io/cjcshadowsan/ansible-awx-ee:latest`
     * Pull policy: `Only pull if not present before running`
 
 3. Applying the execution environment on the relevant job templates.
@@ -101,4 +101,4 @@ This is a common misconfiguration, remember to make sure your job templates are 
 
 ## Please contribute!
 
-Have you found an issue? Do you have an idea for an improvement? Feel free to contribute by submitting it [on the GitHub project](https://github.com/ppodgorsek/ansible-awx-ee/issues).
+Have you found an issue? Do you have an idea for an improvement? Feel free to contribute by submitting it [on the GitHub project](https://github.com/cjcshadowsan/ansible-awx-ee/issues).
